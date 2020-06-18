@@ -1,0 +1,59 @@
+*
+.image-fluid{
+    width: 100%;
+    display: grid;
+    grid-gap: none;
+}
+#section2{
+
+}
+.padding{
+    padding-bottom: 2rem;
+}
+#section3{
+    background-size: 600px;
+    color:white;
+}
+#imagewrap1{
+    background-image: url(../images/Rectangle\ 15.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#imagewrap2{
+    background-image: url(../images/Rectangle\ 16.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#imagewrap3{
+    background-image: url(../images/Rectangle\ 17.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.men, .women, .kids{
+    padding-top: 253px;
+}
+.pop-section{
+    background-image: url(../images/Rectangle\ 38.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.social [class*="fa fa-"] {
+    background-color: #333;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+.fa-twitter:hover { 
+    background-color: #46c0fb; 
+}
