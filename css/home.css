@@ -6,9 +6,15 @@
 body{
     overflow-x: hidden;
 }
+nav li{
+    padding: 10px;
+}
+nav li a{
+    padding: 10px;
+    color:black;
+}
 a{
     text-decoration: none !important;
-    color: #ffffff !important;
 
 }
 .image-fluid{
@@ -53,6 +59,18 @@ a{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.fontz{
+    position: relative !important;
+    float: right !important;
+    padding-top: 200px !important;
+}
+.brands img{
+    padding: 10px;
+}
+.brands img:hover{
+    transform: scale(3.001);
+    -webkit-transform: scale(1.2);
 }
 .social [class*="fa fa-"] {
     background-color: #333;
@@ -113,6 +131,12 @@ footer{
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 24px;
+}
+#footer-info a{
+    color:white;
+}
+#footer-info a:hover{
+    color:rgb(209, 199, 199);
 }
 #copy{
     background: #333333;
