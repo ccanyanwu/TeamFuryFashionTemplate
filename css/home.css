@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,29 +6,82 @@
 }
 body{
     overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: 'Merriweather', serif !important;
 }
-nav li{
-    padding: 10px;
+.navbar-brand{
+    font-weight: bold;
+    font-size: 36px !important;
+    line-height: 45px !important;
+    color: #000000 !important;
 }
-nav li a{
-    padding: 10px;
-    color:black;
+header a{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333 !important
 }
-a{
-    text-decoration: none !important;
+
+/* Section One */
+.landing{
+    position: relative;
+    padding-top: 20px;
+    margin-top: 40px !important;
+    width: 100%;
+}
+#vividImage1{
+    background: url(/images/photo-1514136649217-b627b4b9cfb2.jpg) center center/cover no-repeat ;
+    height: 600px;
+}
+#vividImage1 #vivid1-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#vivid1-content h1{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 91px;
+}
+#vivid1-content p{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    opacity: 0,8;
+}
+#vivid1-content .btn{
+    text-align: center;
+    margin: auto;
+    padding: 8px 22px 7px;
+    background: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #13161F !important;
+}
+#vivid1-content .btn:hover{
 
 }
+#vividImage2{
+    background: url(/images/pexels-photo-1043474.jpeg) center center/cover no-repeat ;
+    height: 600px;
+    width: 100%;
+}
+
 .image-fluid{
     width: 100%;
     display: grid;
     grid-gap: none;
 }
-#section2{
 
-}
 .padding{
     padding-bottom: 2rem;
 }
+
 #section3{
     background-size: 600px;
     color:white;
@@ -60,13 +114,20 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.fontz{
+#free-shopper{
+    height:679px;
+}
+#free-shop-area{
     position: relative !important;
     float: right !important;
-    padding-top: 200px !important;
+    padding-top: 50px !important;
+    background-color: #333333;
+    color: white;
+    
 }
 .brands img{
-    padding: 10px;
+    width: 150px;
+    height: 150px;
 }
 .brands img:hover{
     transform: scale(3.001);
@@ -87,16 +148,7 @@ a{
 #line{
     border-top:  1px solid #E5E5E5;
 }
-.fa-facebook,
-.fa-paypal{
-    color: #222963;
-}
-.fa-twitter{
-    color: #00ACEE;
-}
-.fa-instagram{
-    color: #3F7296;
-}
+
 #socialSpan{
     margin: auto 260px;
 }
@@ -148,4 +200,63 @@ footer{
     font-size: 18px;
     line-height: 25px;
     padding: 24px;
+}
+@media screen and (max-width: 600px){
+    #vivid1-content .btn{
+        height: fit-content;
+        width: fit-content;
+        font-size: 15px;
+    }
+    #vividImage2{
+        display: none;
+    }
+    .brands img{
+        width: 30px;
+        height: 30px;
+    }
+    #section2 h1{
+        font-size:60px;
+    }
+    #footer-info h4{
+        font-size: 18px !important;
+    }
+    #footer-info p{
+        font-size: 15px !important;
+    }
+}
+@media screen and (max-width: 768px){
+    #vivid1-content h1{
+        font-size: 60px;
+    }
+    #vivid1-content p{
+        font-size: 19px;
+    }
+    #vivid1-content .btn{
+        height: fit-content;
+        width: fit-content;
+        font-size: 18px;
+    }
+    #vividImage2{
+        display: none;
+    }
+    .brands h2{
+        font-size: 1rem !important;
+    }
+    .brands img{
+        width: 100px;
+        height: 100px;
+    }
+    #section2 h1{
+        font-size:50px;
+    }
+    #section2 h3{
+        font-size: 1.2rem;
+    }
+    #footer-info h4{
+        font-size: 15px !important;
+        padding: 2px !important;
+    }
+    #footer-info p{
+        font-size: 12px !important;
+    }
 }
