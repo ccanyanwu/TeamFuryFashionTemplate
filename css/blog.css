@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+   min-height: 100vh;
+}
+
+section.hero{
+    position: relative;
+    height: 60vh;
+    margin-bottom: 60rem;
+}
+p.hero-para{
+    margin-top:7rem ;
+    font-size: 150%;
+}
+section#slider{
+    position: absolute;
+    width: 90%!important ;
+    top: 90%;
+    left: 50%;
+    margin-left: -45%;
+    border-radius :0.25rem ;
+}
+div.carousel-inner{
+       width: 100% !important;
+}
+a.carousel-control-prev,
+a.carousel-control-next{
+    margin-top: 51rem;
+}
+
+h6{
+  font-size: 150%;
+}
+
+.comments_message{
+  border: none ;
+}
+div.mine{
+  display: grid;
+  grid-template-columns :1fr 3fr;
+  grid-gap :1rem;
+}
+img.profile{
+  width: 3rem ;
+  height :auto ;
+  border-radius:100%;
+  justify-self: center ;
+} 
+div.footer_copy{
+  background: #444 ;
+}
+/*media queries*/
+/*bigger phone screens*/
+@media all and (min-width:456px){
+  section.hero{
+    margin-bottom: 67rem;
+  }
+  a.carousel-control-prev,
+  a.carousel-control-next{
+    margin-top: 61rem;
+    font-size: 250%;
+  }
+  a.carousel-control-next{
+    padding-right: 8rem;
+  }
+}
+/*tablet*/
+@media all and (min-width:768px){
+  p.hero-para{
+    margin-top:9rem ;
+    font-size: 350%;
+  }
+  p{
+    font-size: 200%;
+  }
+  section.hero{
+    margin-bottom: 96rem;
+  }
+  a.carousel-control-prev,
+  a.carousel-control-next{
+    margin-top: 91rem;
+    font-size: 250%;
+  }
+  a.carousel-control-next{
+    padding-right: 8rem;
+  }
+  h2,
+  h6{
+    font-size: 250%;
+  }
+  h6{
+    padding-top: 2rem;
+  }
+  textarea#comment{
+    height: 4.75rem !important;
+  }
+  textarea::placeholder{
+    font-size: 200%;
+  }
+}
+
+/*large screens*/
+@media all and (min-width:992px){
+  section.hero{
+    position: relative;
+    height: 70vh;
+    margin-bottom: 96rem;
+    padding-bottom: 2rem;
+  }
+  p.hero-para{
+    margin-top:10rem ;
+    font-size: 450%;
+  }   
+  section#slider{
+    position: absolute;
+    width: 70%!important ;
+    top: 90%;
+    left: 50%;
+    margin-left: -35%;
+}
+}
+
+/*larger screens*/
+@media all and (min-width:1200px){
+  section.hero{
+    position: relative;
+    height: 70vh;
+    margin-bottom: 96rem;
+    padding-bottom: 2rem;
+  }
+  p.hero-para{
+    margin-top:10rem ;
+    font-size: 450%;
+  } 
+  section.stories{
+    padding: 5rem;
+  } 
+}
