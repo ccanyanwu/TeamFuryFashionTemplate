@@ -1,12 +1,22 @@
+/*import Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-main{
-   min-height: 100vh;
+/*header including navbar*/
+header{
+  font-family: 'Merriweather', serif !important;
 }
 
+main{
+   min-height: 100vh;
+   font-family: 'Roboto', sans-serif!important ;
+}
+
+/*hero section with large heading */
 section.hero{
     position: relative;
     height: 60vh;
@@ -16,6 +26,8 @@ p.hero-para{
     margin-top:7rem ;
     font-size: 150%;
 }
+
+/*stories slider section */
 section#slider{
     position: absolute;
     width: 90%!important ;
@@ -32,6 +44,7 @@ a.carousel-control-next{
     margin-top: 51rem;
 }
 
+/*comments section */
 h6{
   font-size: 150%;
 }
@@ -50,8 +63,11 @@ img.profile{
   border-radius:100%;
   justify-self: center ;
 } 
+
+/*footer*/
 div.footer_copy{
   background: #444 ;
+  font-family: 'Roboto', sans-serif!important ;
 }
 /*media queries*/
 /*bigger phone screens*/
@@ -121,7 +137,7 @@ div.footer_copy{
     top: 90%;
     left: 50%;
     margin-left: -35%;
-}
+  }
 }
 
 /*larger screens*/

@@ -6,8 +6,10 @@ const textArea = document.querySelector('textarea'),
       
       //listen for submit event
       btn.addEventListener('click', function(){
-        console.log('Id already allocated ');
         let comment = textArea.value;
+        if (comment === '') {
+          alert('Please add a comment');
+        }else{
        let newComment = document.createElement("img");
        newComment.setAttribute("src", "images/profile.png");
        newComment.setAttribute("alt", "user head-shot");
@@ -17,4 +19,7 @@ const textArea = document.querySelector('textarea'),
        newPara.textContent = `${textArea.value}`;
        mine.append(newComment, newPara);
        
-      });
+      }
+        comment = "";
+      } );
+      
