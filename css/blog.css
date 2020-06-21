@@ -1,5 +1,7 @@
 /*import Google fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 *{
     padding: 0;
@@ -20,7 +22,7 @@ main{
 section.hero{
     position: relative;
     height: 60vh;
-    margin-bottom: 60rem;
+    margin-bottom: 76rem;
 }
 p.hero-para{
     margin-top:7rem ;
@@ -36,19 +38,28 @@ section#slider{
     margin-left: -45%;
     border-radius :0.25rem ;
 }
+.img-fluid{
+  width: 80%!important ;
+  height :auto ;
+}
 div.carousel-inner{
        width: 100% !important;
 }
+div.carousel-item p{
+  font-size :0.75rem;
+} 
 a.carousel-control-prev,
 a.carousel-control-next{
-    margin-top: 51rem;
+    margin-top: 69rem;
 }
 
 /*comments section */
 h6{
-  font-size: 150%;
+  font-size: 100%!important ;
 }
-
+textarea::placeholder{
+  font-size: 0.75rem!important ;
+}
 .comments_message{
   border: none ;
 }
@@ -58,55 +69,70 @@ div.mine{
   grid-gap :1rem;
 }
 img.profile{
-  width: 3rem ;
+  width: 2.5rem ;
   height :auto ;
   border-radius:100%;
   justify-self: center ;
 } 
+img.profile + p{
+  font-size: 0.75rem;
+}
 
 /*footer*/
+.foot1_para{
+  font-size: 0.75rem ;
+}
 div.footer_copy{
   background: #444 ;
+  font-size: 0.75rem ;
   font-family: 'Roboto', sans-serif!important ;
 }
 /*media queries*/
 /*bigger phone screens*/
-@media all and (min-width:456px){
+@media (min-width:576px){
   section.hero{
-    margin-bottom: 67rem;
+    margin-bottom: 68rem;
   }
+  section#slider{
+    width: 70%!important ;
+    margin-left: -35%;
+}
   a.carousel-control-prev,
   a.carousel-control-next{
-    margin-top: 61rem;
-    font-size: 250%;
+    margin-top: 64rem;
   }
   a.carousel-control-next{
-    padding-right: 8rem;
+    padding-right: 3rem!important ;
   }
 }
 /*tablet*/
-@media all and (min-width:768px){
+@media (min-width:768px){
   p.hero-para{
     margin-top:9rem ;
-    font-size: 350%;
+    font-size: 250%;
   }
-  p{
-    font-size: 200%;
-  }
+
   section.hero{
-    margin-bottom: 96rem;
+    margin-bottom: 62rem;
+    height :75vh;
   }
+  section#slider{
+    width: 60%!important ;
+    margin-left: -30%;
+}
   a.carousel-control-prev,
   a.carousel-control-next{
-    margin-top: 91rem;
-    font-size: 250%;
+    margin-top: 60rem;
   }
   a.carousel-control-next{
     padding-right: 8rem;
   }
+  .comment_button{
+    width: 40% !important;
+  }
   h2,
   h6{
-    font-size: 250%;
+    font-size: 150%;
   }
   h6{
     padding-top: 2rem;
@@ -120,38 +146,47 @@ div.footer_copy{
 }
 
 /*large screens*/
-@media all and (min-width:992px){
+@media  (min-width:992px){
+  
   section.hero{
     position: relative;
     height: 70vh;
-    margin-bottom: 96rem;
+    margin-bottom: 66rem;
     padding-bottom: 2rem;
   }
   p.hero-para{
-    margin-top:10rem ;
-    font-size: 450%;
+    margin-top:5rem ;
+    font-size: 320%;
   }   
-  section#slider{
-    position: absolute;
-    width: 70%!important ;
-    top: 90%;
-    left: 50%;
-    margin-left: -35%;
+  a.carousel-control-prev,
+  a.carousel-control-next{
+    margin-top: 62rem;
   }
+  
 }
 
 /*larger screens*/
-@media all and (min-width:1200px){
+@media  (min-width:1200px){
   section.hero{
     position: relative;
     height: 70vh;
-    margin-bottom: 96rem;
+    margin-bottom: 76rem;
     padding-bottom: 2rem;
   }
   p.hero-para{
-    margin-top:10rem ;
-    font-size: 450%;
+    margin-top:5rem ;
+    font-size: 380%;
   } 
+  div.carousel-item p{
+    font-size :0.75rem;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+  a.carousel-control-prev,
+  a.carousel-control-next{
+    margin-top: 72rem;
+  }
   section.stories{
     padding: 5rem;
   } 
