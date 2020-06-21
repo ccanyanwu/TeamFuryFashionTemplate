@@ -27,53 +27,94 @@
     />
   </head>
   <body>
+    <!--header containing nav-bar-->
     <header>
-      <!-- Responsive Navigation -->
-      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="navabra-brand" href="#"><h2>VIVID</h2></a>
+      <div class="py- container">
+        <nav class="navbar navbar-expand-lg navbar-light opacity px-0">
+          <a class="navbar-brand" href="#">
+            <p class="h2 font-weight-bolder">VIVID</p>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarResponsive"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" style="font-size: 18px;">
+              <li class="nav-item mr-1 ml-2">
+                <a class="nav-link text-dark font-weight-bold" href="index.html"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item mr-1 ml-2">
+                <a class="nav-link text-dark font-weight-bold" href="#">Shop</a>
+              </li>
+              <li class="nav-item mr-1 ml-2 dropdown">
+                <a class="nav-link text-dark font-weight-bold" href="blog.html"
+                  >Blog<span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item mr-1 ml-2">
+                <a
+                  class="nav-link text-dark font-weight-bold"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >About</a
+                >
+              </li>
 
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
+              <li class="nav-item mr-1 ml-2">
+                <a
+                  class="nav-link text-dark font-weight-bold"
+                  href="contact"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Contact</a
+                >
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Shop</a>
+              <li class="nav-item mr-1 ml-2">
+                <a
+                  class="nav-link text-dark border-0 font-weight-bold"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  <i class="fa fa-shopping-cart fa-1x mr-1"></i
+                  ><span class="text-white rounded-circle bg-dark">2</span>
+                </a>
               </li>
-              <li class="nav-item">
-                <a href="blog.html" class="nav-link">Blog </a>
+              <li class="nav-item mr-1 ml-2">
+                <a
+                  class="nav-link text-dark"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  <i class="fa fa-heart fa-1x mr-1"></i
+                  ><span class="text-white bg-dark rounded-circle">3</span>
+                </a>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
-              </li>
-
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fa fa-heart-o mr-1"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fa fa-search mr-1"></i
-                ></a>
+              <li class="nav-item mr-1 ml-2">
+                <a
+                  class="nav-link text-dark"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  <i class="fa fa-search fa-1x mr-1"></i>
+                </a>
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
-      <!-- End of Navigation Bar -->
+        </nav>
+      </div>
     </header>
 
     <!-- Banner start -->
@@ -83,7 +124,9 @@
           <div class="col-md-6 banner_1">
             <h1>vivid</h1>
             <h2 class="text-white text-uppercase">home of trendy people</h2>
-            <a href="#" class="btn btn-outline-info btn-lg">start shopping</a>
+            <a href="#" class="btn btn-outline-success btn-lg"
+              >start shopping</a
+            >
           </div>
           <div class="col-md-6 banner_2"></div>
         </div>
@@ -319,56 +362,151 @@
           <div class="col-md-3 text-center">
             <img src="./images/sponsor4.png" alt="image" class="img-fluid" />
           </div>
-
-          <div class="col-md-8 mx-auto text-center mt-5 mb-5">
-            <i class="fab fa-facebook fa-2x mr-3"></i>
-            <i class="fab fa-twitter fa-2x mr-3"></i>
-            <i class="fab fa-instagram fa-2x mr-3"></i>
-            <span class="mr-3 pt-2 bg-light"></span>
-            <i class="fab fa-cc-visa fa-2x mr-3"></i>
-            <i class="fab fa-cc-mastercard fa-2x mr-3"></i>
-            <i class="fab fa-paypal fa-2x mr-3"></i>
-          </div>
         </div>
       </div>
     </section>
     <!-- Treding Brands end -->
 
-    <!-- Footer Section -->
-    <footer class="">
-      <div class="container-fluid">
-        <div id="footer-info">
-          <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4">
-              <h4>HELP & INFORMATION</h4>
-              <p><a href="#">Help</a></p>
-              <p><a href="#">Track Order</a></p>
-              <p><a href="#">Delivery & Return</a></p>
-              <p><a href="#">10% Student Discount</a></p>
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4">
-              <h4>ABOUT VIVID</h4>
-              <p><a href="#">About Us</a></p>
-              <p><a href="#">Career at VIVID</a></p>
-              <p><a href="#">Corporate Responsibility</a></p>
-              <p><a href="#">Investor Site</a></p>
-            </div>
-            <div class="col-xs-4 col-sm-4 col-md-4">
-              <h4>MORE FROM VIVID</h4>
-              <p><a href="#">Mobile & VIVID App</a></p>
-              <p><a href="#">VIVID Marketplace</a></p>
-              <p><a href="#">Gift Vouchers</a></p>
-            </div>
-          </div>
-        </div>
+    <!-- social media images and payment options-->
+    <div class="row mx-auto justify-content-center py-3 border-top">
+      <div
+        class="col-xl-4 col-lg-4 col-md-6 d-flex align-items-center justify-content-between"
+      >
+        <img src="./images/contact/iconfinder_3_940994.png" alt="" srcset="" />
+        <img
+          src="./images/contact/iconfinder_twitter_834708.png"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="./images/contact/iconfinder_instagram_circle_color_107172.png"
+          alt=""
+          srcset=""
+        />
+        <div
+          style="width: 0.4%;"
+          class="border border-dark h-100 bg-dark"
+        ></div>
+        <img
+          src="./images/contact/iconfinder__Visa_1156753.png"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="./images/contact/iconfinder_250_Paypal_logo_4375034.png"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="./images/contact/iconfinder__Mastercard_1156750.png"
+          alt=""
+          srcset=""
+        />
       </div>
-      <!-- Copyright -->
-      <div id="copy">
-        <div class="container">
-          <p class="mt-4">&copy; 2020 VIVID</p>
-        </div>
+    </div>
+    <!--FOOTER-->
+    <footer class="row bg-dark justify-content-center pl-5 py-5">
+      <div class="foot1 col-10 col-md-4 mx-auto px-auto text-left">
+        <a
+          class="foot1_header font-weight-bolder text-decoration-none text-white text-uppercase mb-4 d-block"
+          href="#"
+          >help & information
+        </a>
+        <a
+          class="foot1_para text-decoration-none text-white text-capitalize d-block mb-3"
+          href="#"
+          >help
+        </a>
+        <a
+          class="foot1_para text-decoration-none text-white text-capitalize d-block mb-3"
+          href="#"
+          >track order</a
+        >
+        <a
+          class="foot1_para text-decoration-none text-white text-capitalize d-block mb-3"
+          href="#"
+          >delivery & returns
+        </a>
+        <a
+          class="foot1_para text-decoration-none text-white text-capitalize d-block mb-5"
+          href="#"
+          >10% standard discount
+        </a>
+      </div>
+      <div class="foot1 col-10 col-md-4 mx-auto px-auto text-left">
+        <a
+          class="foot1_header font-weight-bolder text-decoration-none text-white text-uppercase mb-4 d-block"
+          href="#"
+          >about Vivid
+        </a>
+        <a
+          class="foot1_para text-decoration-none text-white text-capitalize d-block mb-3"
+          href="#"
+          >about us
+        </a>
+        <a
+          class="foot1_para text-decoration-none text-white text-capitalize d-block mb-3"
+          href="#"
+          >careers at VIVID
+        </a>
+        <a
+          class="foot1_para text-decoration-none text-white text-capitalize d-block mb-3"
+          href="#"
+          >corporate responsibility
+        </a>
+        <a
+          class="foot1_para text-decoration-none text-white text-capitalize d-block mb-5"
+          href="#"
+          >investors site</a
+        >
+      </div>
+      <div class="foot1 col-10 col-md-4 mx-auto px-auto text-left">
+        <a
+          class="foot1_header font-weight-bolder text-decoration-none text-white text-uppercase mb-4 d-block"
+          href="#"
+          >more from Vivid
+        </a>
+        <a
+          class="foot1_para text-decoration-none text-white text-capitalize d-block mb-3"
+          href="#"
+          >VIVID mobile app</a
+        >
+        <a
+          class="foot1_para text-decoration-none text-white text-capitalize d-block mb-3"
+          href="#"
+          >VIVID marketplace
+        </a>
+        <a
+          class="foot1_para text-decoration-none text-white text-capitalize d-block mb-3"
+          href="#"
+          >gift vouchers</a
+        >
       </div>
     </footer>
+    <div class="footer_copy pt-1 row">
+      <p class="col-12 text-white text-center font-weight-light">
+        &copy;2020 VIVID
+      </p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/blog.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- Script start -->
     <script
