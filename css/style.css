@@ -263,17 +263,6 @@ footer {
   }
 }
 
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
-
-/* .container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-} */
-
 body {
   font-family: 'Open Sans', sans-serif !important;
 }
@@ -305,9 +294,13 @@ body {
   line-height: 5;
 }
 
-.banner .btn-outline-info {
+.banner .btn-outline-success {
   background-color: #fff !important;
   color: #000000 !important;
+  padding: 10px 30px !important;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 0;
 }
 
 .banner h2 {
@@ -316,6 +309,10 @@ body {
 
 .banner a {
   margin-left: 100px;
+}
+
+header {
+  font-family: Merriweather !important;
 }
 
 .banner h1 {
@@ -416,26 +413,6 @@ body {
   right: 80px;
   top: 400px;
 }
-/* .arrivals .women {
-  position: relative;
-  top: -340px;
-  left: 50px;
-  z-index: -100px;
-} */
-
-/* .arrivals .kids {
-  position: relative;
-  top: -340px;
-  left: 115px !important;
-  z-index: -100px;
-} */
-
-/* .arrivals .test {
-  position: relative;
-  top: -280px;
-  left: 65px;
-  z-index: -100px;
-} */
 
 .btn-outline-dark {
   border: 3px solid #fff !important;
@@ -459,10 +436,6 @@ body {
 /* Offsales start */
 .offsales_margin {
   margin-top: -60px;
-}
-
-.offsales .btn-dark {
-  width: 60% !important;
 }
 
 .offsales .bg_img {
@@ -510,7 +483,6 @@ body {
   color: #000000;
   font-weight: bold;
   font-size: 16px;
-  /* width: 285px; */
   border-radius: 0;
   line-height: 22px;
   text-transform: uppercase;
@@ -619,17 +591,22 @@ body {
   .arrivals {
     display: none !important;
   }
-  .banner_2 {
-    display: none !important;
-  }
+
   .banner_1 h1,
   .banner_1 h2,
   .banner_1 a {
     margin-right: 30px !important;
+    font-size: 16px !important;
   }
   .banner_1 {
     padding-top: 120px;
     padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 702px) {
+  .banner .btn-info {
+    font-size: 16px !important;
   }
 }
 
@@ -639,5 +616,17 @@ body {
   }
   .shopping {
     display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner .btn-dark {
+    width: 100% !important;
   }
 }
