@@ -189,12 +189,18 @@ footer {
 #footer-info a {
   color: white;
 }
+.foot1_para{
+  font-size: 0.75rem ;
+}
 #footer-info a:hover {
   color: rgb(209, 199, 199);
 }
-#copy {
-  background: #333333;
-  height: 100px;
+.footer_copy {
+  background-color: #333!important;
+  height: 3rem;
+}
+.footer_copy p{
+  font-size :0.75rem ;
 }
 #copy p {
   width: 413px;
@@ -202,6 +208,7 @@ footer {
   font-size: 18px;
   line-height: 25px;
   padding: 24px;
+  color:white ;
 }
 @media screen and (max-width: 600px) {
   #vivid1-content .btn {
