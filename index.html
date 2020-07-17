@@ -6,132 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Vivid Fashion</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    /> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" /> 
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
   
   </head>
   <body class="container-fluid">
     <!--header containing nav-bar-->
-    <header>
-      <div class="py- container">
+    <header data-aos="fade-down" data-aos-duration="2000">
+      <div class=" container">
         <nav class="navbar navbar-expand-lg navbar-light opacity px-0">
-          <a class="navbar-brand" href="#">
-            <p class="h2 font-weight-bolder">VIVID</p>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto" style="font-size: 18px;">
-              <li class="nav-item mr-1 ml-2">
-                <a class="nav-link text-dark font-weight-bold" href="index.html"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item mr-1 ml-2">
-                <a class="nav-link text-dark font-weight-bold" href="#">Shop</a>
-              </li>
-              <li class="nav-item mr-1 ml-2 dropdown">
-                <a class="nav-link text-dark font-weight-bold" href="blog.html"
-                  >Blog<span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item mr-1 ml-2">
-                <a
-                  class="nav-link text-dark font-weight-bold"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Checkout</a
-                >
-              </li>
-
-              <li class="nav-item mr-1 ml-2">
-                <a
-                  class="nav-link text-dark font-weight-bold"
-                  href="contact"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Contact</a
-                >
-              </li>
-              <li class="nav-item mr-1 ml-2">
-                <a
-                  class="nav-link text-dark border-0 font-weight-bold"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                >
-                  <i class="fa fa-shopping-cart fa-1x mr-1"></i
-                  ><span class="text-white rounded-circle bg-dark">2</span>
-                </a>
-              </li>
-              <li class="nav-item mr-1 ml-2">
-                <a
-                  class="nav-link text-dark"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                >
-                  <i class="fa fa-heart fa-1x mr-1"></i
-                  ><span class="text-white bg-dark rounded-circle">3</span>
-                </a>
-              </li>
-              <li class="nav-item mr-1 ml-2">
-                <a
-                  class="nav-link text-dark"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                >
-                  <i class="fa fa-search fa-1x mr-1"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+            <a class="navbar-brand " href="#">
+              <p class="h2 font-weight-bolder">VIVID</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav text-light ml-auto " style="font-size: 18px;">
+                <li class="nav-item mr-1 ml-2">
+                  <a class="nav-link text-dark font-weight-bold" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-1 ml-2 dropdown">
+                    <a class="nav-link text-dark font-weight-bold" href="about.html">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-1 ml-2">
+                  <a class="nav-link text-dark  font-weight-bold" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+                </li>
+                <li class="nav-item mr-1 ml-2">
+                  <a class="nav-link text-dark border-0 font-weight-bold " href="#" tabindex="-1" aria-disabled="true">
+                    <i class="fa fa-shopping-cart fa-1x mr-1"></i><span class=" text-white rounded-circle bg-dark">2</span>
+                  </a>
+                </li>
+                <li class="nav-item mr-1 ml-2">
+                  <a class="nav-link text-dark  " href="#" tabindex="-1" aria-disabled="true">
+                    <i class="fa fa-heart fa-1x mr-1"></i><span class="text-white bg-dark rounded-circle">3</span>
+                  </a>
+                </li>
+                <li class="nav-item mr-1 ml-2">
+                  <a class="nav-link text-dark  " href="#" tabindex="-1" aria-disabled="true">
+                    <i class="fa fa-search fa-1x mr-1"></i>
+                  </a>
+                </li>
+                <li class="nav-item mr-1 ml-2">
+                  <a class="nav-link text-dark font-weight-bold" href="signin.html">Sign in <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              
+            </div>
+          </nav>
       </div>
     </header>
-
     <!-- Banner start -->
     <section class="banner">
       <!--<div class="container-fluid">-->
         <div class="row">
-          <div class="col-md-6 banner_1">
+          <div class="col-md-6 banner_1" data-aos="zoom-in-right" data-aos-duration="3000">
             <h1>vivid</h1>
             <h2 class="text-white text-uppercase">home of trendy people</h2>
             <a href="#" class="btn btn-outline-success btn-lg"
               >start shopping</a
             >
           </div>
-          <div class="col-md-6 banner_2"></div>
+          <div class="col-md-6 banner_2"  data-aos="zoom-in-down" data-aos-duration="3000"></div>
         </div>
       <!--</div>-->
     </section>
@@ -141,21 +82,21 @@
     <section class="arrivals new_arrivals_padding">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12" data-aos="zoom-in" data-aos-duration="2000">
             <h2 class="text-center text-capitalize">new arrivals.</h2>
             <p class="text-center pb-4">
               New trends now available in more of more style.
             </p>
           </div>
 
-          <div class="col-md-4 col-sm-6 arrival_1">
+          <div class="col-md-4 col-sm-6 arrival_1" data-aos="fade-up" data-aos-duration="3000">
             <div>
               <img src="./images/Men..png" alt="img" class="img-fluid test" />
               <a href="#" class="btn btn-outline-info btn-lg">start shopping</a>
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 arrival_2">
+          <div class="col-md-4 col-sm-6 arrival_2" data-aos="fade-down" data-aos-duration="3000">
             <div>
               <img
                 src="./images/Women..png"
@@ -166,7 +107,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 arrival_3">
+          <div class="col-md-4 col-sm-6 arrival_3" data-aos="fade-up" data-aos-duration="3000">
             <div>
               <img src="./images/Kids..png" alt="img" class="img-fluid test3" />
               <a href="#" class="btn btn-outline-info btn-lg">start shopping</a>
@@ -187,7 +128,7 @@
               <img
                 src="./images/extra-sale.png"
                 alt="image"
-                class="img-fluid bg_extras mt-3"
+                class="img-fluid bg_extras mt-3"  data-aos="flip-down" data-aos-duration="1000"
               />
             </div>
 
@@ -195,7 +136,7 @@
               <img
                 src="./images/shirt.png"
                 alt="image"
-                class="img-fluid bg_extras mt-1"
+                class="img-fluid bg_extras mt-1"  data-aos="fade-up" data-aos-duration="1000"
               />
             </div>
 
@@ -210,9 +151,10 @@
 
           <div
             class="col-md-3 col-sm-6 mt-4 mb-5 text-center text-capitalize promo_shirts"
+            data-aos="fade-right" data-aos-duration="2000"
           >
             <img src="./images/Rectangle 4.png" alt="image" class="img-fluid" />
-            <h6 class="mt-4">Ash Shirt</h6>
+            <h6 class="mt-4" >Ash Shirt</h6>
             <p class="mb-4">$10</p>
             <button class="btn btn-dark">
               add to cart
@@ -221,6 +163,7 @@
 
           <div
             class="col-md-3 col-sm-6 mt-4 mb-5 text-center text-capitalize promo_shirts"
+            data-aos="fade-down" data-aos-duration="2000"
           >
             <img src="./images/Rectangle 5.png" alt="image" class="img-fluid" />
             <h6 class="mt-4">white shirt</h6>
@@ -232,6 +175,7 @@
 
           <div
             class="col-md-3 col-sm-6 mt-4 mb-5 text-center text-capitalize promo_shirts"
+            data-aos="fade-up" data-aos-duration="2000"
           >
             <img
               src="./images/Rectangle 36.png"
@@ -247,6 +191,7 @@
 
           <div
             class="col-md-3 col-sm-6 mt-4 mb-5 text-center text-capitalize promo_shirts"
+            data-aos="fade-down" data-aos-duration="2000"
           >
             <img src="./images/Rectangle 7.png" alt="image" class="img-fluid" />
             <h6 class="mt-4">white design shirt</h6>
@@ -258,6 +203,7 @@
 
           <div
             class="col-md-3 mt-4 mb-4 col-sm-6 text-center text-capitalize promo_shirts"
+            data-aos="fade-right" data-aos-duration="1000"
           >
             <img src="./images/Rectangle 8.png" alt="image" class="img-fluid" />
             <h6 class="mt-4">white shirt</h6>
@@ -268,6 +214,7 @@
 
           <div
             class="col-md-3 col-sm-6 mt-4 mb-4 text-center text-capitalize promo_shirts"
+            data-aos="fade-right" data-aos-duration="1750"
           >
             <img src="./images/Rectangle 9.png" alt="image" class="img-fluid" />
             <h6 class="mt-4">yellow shirt</h6>
@@ -278,6 +225,7 @@
 
           <div
             class="col-md-3 col-sm-6 mt-4 mb-4 text-center text-capitalize promo_shirts"
+            data-aos="fade-right" data-aos-duration="2000"
           >
             <img
               src="./images/Rectangle 10.png"
@@ -292,6 +240,7 @@
 
           <div
             class="col-md-3 col-sm-6 mt-4 mb-4 text-center text-capitalize promo_shirts"
+            data-aos="fade-right" data-aos-duration="3000"
           >
             <img
               src="./images/Rectangle 11.png"
@@ -313,16 +262,20 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 sm-10 bg-dark easy_shopping">
-            <h4 class="text-white text-right">
+            <h4 class="text-white text-right" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
               Easy <br />
               Shopping.
             </h4>
 
             <div class="col-md-10 mx-auto text-right">
               <img src="./images/cart.png" alt="image" class="img-fluid cart" />
-              <i class="fa fa-shopping-cart text-white"></i>
-              <h5 class="text-white text-right">Free Shipping</h5>
-              <p class="text-white text-right ml-auto">
+              <i class="fa fa-shopping-cart text-white newRiv" data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom" data-aos-duration="3000"></i>
+              <h5 class="text-white text-right" data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom" data-aos-duration="3000">Free Shipping</h5>
+              <p class="text-white text-right ml-auto" data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
                 We make nationwide delivery
               </p>
             </div>
@@ -346,7 +299,8 @@
     <!-- Easy Shopping end -->
 
     <!-- Treding Brands start -->
-    <section class="brands brands_padding">
+    <section class="brands brands_padding" data-aos="fade-right"
+     data-aos-duration="3000">
       <div class="container mt-5 mb-5">
         <div class="row">
           <div class="col-sm-12">
@@ -375,14 +329,19 @@
       <div
         class="col-xl-4 col-lg-4 col-md-6 d-flex align-items-center justify-content-between"
       >
-        <img src="./images/contact/iconfinder_3_940994.png" alt="" srcset="" />
+        <img src="./images/contact/iconfinder_3_940994.png"  data-aos="zoom-right"
+        data-aos-duration="3000"alt="" srcset="" />
         <img
           src="./images/contact/iconfinder_twitter_834708.png"
+          data-aos="zoom-right"
+          data-aos-duration="3000"
           alt=""
           srcset=""
         />
         <img
           src="./images/contact/iconfinder_instagram_circle_color_107172.png"
+          data-aos="zoom-"
+          data-aos-duration="3000"
           alt=""
           srcset=""
         />
@@ -392,23 +351,30 @@
         ></div>
         <img
           src="./images/contact/iconfinder__Visa_1156753.png"
+          data-aos="zoom-in"
+          data-aos-duration="3000"
           alt=""
           srcset=""
         />
         <img
           src="./images/contact/iconfinder_250_Paypal_logo_4375034.png"
+          data-aos="zoom-in"
+          data-aos-duration="3000"
           alt=""
           srcset=""
         />
         <img
           src="./images/contact/iconfinder__Mastercard_1156750.png"
+          data-aos="zoom-in"
+          data-aos-duration="3000"
           alt=""
           srcset=""
         />
       </div>
     </div>
     <!--FOOTER-->
-    <footer class="row bg-dark justify-content-center pl-5 py-5">
+    <footer class="row bg-dark justify-content-center pl-5 py-5"  data-aos="fade-up"
+    data-aos-duration="3000">
       <div class="foot1 col-10 col-md-4 mx-auto px-auto text-left">
         <a
           class="foot1_header font-weight-bolder text-decoration-none text-white text-uppercase mb-4 d-block"
@@ -527,6 +493,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Script end -->
   </body>
 </html>
